@@ -1,3 +1,24 @@
 {
-  "user": []
+  "user": [
+    {
+      "id": "egamov",
+      "name": "Egamov J",
+      "password": "1234",
+      "email": "egamov@gmail.com",
+      "phone": "+998888581319",
+      "country": "uzbekistan",
+      "address": "Khorezm region",
+      "gender": "male"
+    },
+    {
+      "id": "egamov",
+      "name": "Egamov Jo'rabek",
+      "password": "1234",
+      "email": "egamovj90@gmail.com",
+      "phone": "+998888581319",
+      "country": "uzbekistan",
+      "address": "Khorezm region",
+      "gender": "male"
+    }
+  ]
 }

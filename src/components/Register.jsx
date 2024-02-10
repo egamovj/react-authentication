@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { useState } from "react";
+import { toast } from "react-toastify";
 
 const Register = () => {
   const [id, setId] = useState("");
@@ -14,8 +15,15 @@ const Register = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     let regobj = { id, name, password, email, phone, country, address, gender };
-    // console.log(regobj);
-    fetch
+    fetch("http://localhost:8000/user", {
+        method: "POST",
+        headers: {'content-type' : 'application/json'},
+        body: JSON.stringify(regobj),
+    }).then((res) => {
+        toast.success('Registered Successfully.')
+    }).catch((err) => {
+        toast.error('Failed :'+ err.message);
+    });
   };
 
   return (
