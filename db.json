@@ -19,6 +19,16 @@
       "country": "uzbekistan",
       "address": "Khorezm region",
       "gender": "male"
+    },
+    {
+      "id": "pozilov",
+      "name": "Pozilov Baxtiyor",
+      "password": "1478",
+      "email": "baxtiyor@gmail.com",
+      "phone": "+998940708884",
+      "country": "uzbekistan",
+      "address": "Andijan region",
+      "gender": "male"
     }
   ]
 }
