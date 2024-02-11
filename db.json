@@ -9,6 +9,16 @@
       "country": "uzbekistan",
       "address": "Khorezm region",
       "gender": "male"
+    },
+    {
+      "id": "egamovsh",
+      "name": "Egamov Shohruh",
+      "password": "12345",
+      "email": "egamovsh@gmail.com",
+      "phone": "+998974568504",
+      "country": "uzbekistan",
+      "address": "Khorezm region",
+      "gender": "male"
     }
   ]
 }
