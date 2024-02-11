@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 
@@ -8,6 +8,10 @@ const Login = () => {
   const [password, setPassword] = useState("");
 
   const usenavigate = useNavigate();
+
+  useEffect(() => {
+    sessionStorage.clear();
+  }, []);
 
   const ProceedLogin = (e) => {
     e.preventDefault();
@@ -18,14 +22,15 @@ const Login = () => {
         })
         .then((resp) => {
           //console.log(resp);
-          if(Object.keys(resp).length===0){
-            toast.error('Please enter valid username');
+          if (Object.keys(resp).length === 0) {
+            toast.error("Please enter valid username");
           } else {
-            if(resp.password ===password) { 
-              toast.success('Success')
-              usenavigate('/')
+            if (resp.password === password) {
+              toast.success("Success");
+              sessionStorage.setItem("username", username);
+              usenavigate("/");
             } else {
-              toast.error('Please enter valid credentials');
+              toast.error("Please enter valid credentials");
             }
           }
         })
