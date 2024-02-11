@@ -39,6 +39,16 @@
       "country": "uzbekistan",
       "address": "Khorezm region",
       "gender": "male"
+    },
+    {
+      "id": "kholboyeva",
+      "name": "Nilufar",
+      "password": "12345",
+      "email": "nilufar@gmail.com",
+      "phone": "+998976072180",
+      "country": "uzbekistan",
+      "address": "Khorezm region",
+      "gender": "female"
     }
   ]
 }
